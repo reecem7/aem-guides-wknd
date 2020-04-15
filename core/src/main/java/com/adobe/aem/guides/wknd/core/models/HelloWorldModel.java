@@ -33,6 +33,7 @@ import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 
 import java.util.Optional;
+import org.apache.commons.lang3.StringUtils;
 
 @Model(adaptables = Resource.class)
 public class HelloWorldModel {
@@ -50,6 +51,12 @@ public class HelloWorldModel {
 
     private String message;
 
+    @ValueMapValue(injectionStrategy=InjectionStrategy.OPTIONAL)
+    protected String greeting;
+
+    @ValueMapValue(injectionStrategy=InjectionStrategy.OPTIONAL)
+    protected String text;
+
     @PostConstruct
     protected void init() {
         PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
@@ -65,6 +72,22 @@ public class HelloWorldModel {
 
     public String getMessage() {
         return message;
+    }
+        
+    /***
+    * 
+    * @return the value of greeting, if null or blank returns "Hello"
+    */
+    public String getGreeting() {
+        return StringUtils.isNotBlank(this.greeting) ? this.greeting : "Hello";
+    }
+
+    /***
+     * 
+     * @return All caps variation of the text value
+     */
+    public String getTextUpperCase() {
+        return StringUtils.isNotBlank(this.text) ? this.text.toUpperCase() : null;
     }
 
 }
