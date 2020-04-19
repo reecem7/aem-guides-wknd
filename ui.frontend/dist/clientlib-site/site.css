@@ -1,1 +1,85 @@
-.cmp-hello-world-sass:before{content:"\003e";display:inline-block;padding:0 10px}
+/*
+ *  Copyright 2018 Adobe Systems Incorporated
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+body {
+  background-color: #ffffff;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  text-align: left;
+  color: #202020;
+  line-height: 1.5; }
+  body .root {
+    max-width: 1164px;
+    margin: 0 auto; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.5;
+  color: #202020; }
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  font-family: "Asar", Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  margin-top: 27px;
+  margin-bottom: 13.5px; }
+
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+h1, .h1 {
+  font-size: 40px; }
+
+h2, .h2 {
+  font-size: 36px; }
+
+h3, .h3 {
+  font-size: 24px; }
+
+h4, .h4 {
+  font-size: 16px; }
+
+h5, .h5 {
+  font-size: 14px; }
+
+h6, .h6 {
+  font-size: 10px; }
+
+a {
+  color: #0045FF;
+  text-decoration: none; }
+
+h1 a, h2 a, h3 a {
+  color: #FF0058;
+  /* for wednesdays :-) */ }
+
+p {
+  margin: 0 0 13.5px;
+  font-size: 18px;
+  line-height: 2.5;
+  text-align: justify; }
+
+.cmp-hello-world-sass:before {
+  content: "\003e";
+  display: inline-block;
+  padding: 0 10px; }
+
