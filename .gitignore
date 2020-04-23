@@ -16,6 +16,7 @@ local.properties
 
 # Eclipse Core
 .project
+MANIFEST.MF
 
 # External tool builders
 .externalToolBuilders/
@@ -56,6 +57,8 @@ local.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+# Mac OS #
+.DS_Store
 
 ### Maven ###
 target/
@@ -74,3 +77,6 @@ buildNumber.properties
 ### IntelliJ ###
 .idea/
 *.iml
+
+### Visual Studio ###
+.vscode
